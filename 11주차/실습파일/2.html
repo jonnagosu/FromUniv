@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="500" height="500"
+    style="background-color: aquamarine;">
+
+    </canvas>
+    <!--script-->
+    <script>
+        var can1=document.getElementById("canvas");
+        var context1=can1.getContext("2d");
+
+        context1.font="50px arial";
+        context1.strokeStyle="blue";
+        context1.lineWidth=1;
+        context1.strokeText("Javascript",30,100);
+
+        context1.font="50px arial";
+        context1.fillStyle="green";
+        context1.fillText("Javascript",30,200);
+    </script>
+</body>
+</html>

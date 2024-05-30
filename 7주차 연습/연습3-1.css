@@ -1,0 +1,15 @@
+body{
+
+}
+.ul1 :hover{
+    background-color: greenyellow;
+}
+h1::first-letter{
+    color: red;
+}
+div>strong{
+    color: aqua;
+}
+ul strong{
+    color: red;
+}

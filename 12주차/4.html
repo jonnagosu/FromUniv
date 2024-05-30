@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        input[type="text"]{
+            color: blue;
+            border: 2px solid red;
+        }
+        input[type="text"]:hover{
+            background-color: bisque;
+        }
+        input[type="text"]:focus{ /*focus는 집중(클릭 됐을때)*/
+            font-size: 1.2em;
+        }
+        input[type="submit"]{
+            background-color: green;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        이름<input type="text" placeholder="이름"> <br>
+        이메일<input type="email" placeholder="이메일"> <br><br>
+        <input type="submit" value="submit"> <br>
+    </form>
+</body>
+</html>

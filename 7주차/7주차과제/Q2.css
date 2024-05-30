@@ -1,0 +1,31 @@
+body{
+    background-color: aliceblue;
+}
+h1{
+    text-align: center;
+    color: darkred;
+}
+p{
+    font-family: 휴먼편지체;
+    text-indent: 20px;
+}
+.line{
+    border: 1px solid black;
+}
+h2{
+    color: blue;
+    text-shadow: 2px 2px 5px skyblue;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    border: 1px dotted;
+}
+span{
+    font-family: 휴먼편지체;
+    border-radius: 20px;
+    background-color: orange;
+    display: block;
+    padding-left: 10px;
+}

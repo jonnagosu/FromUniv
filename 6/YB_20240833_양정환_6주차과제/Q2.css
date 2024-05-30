@@ -1,0 +1,28 @@
+body{
+    background-color: aliceblue;
+}
+h1{
+    color: darkred;
+    text-align: center;
+}
+p{
+    font-family: 휴먼편지체;
+    text-indent: 20px;
+}
+h2{
+    color:blue;
+}
+h2 > a {
+    color: blue;
+    text-decoration: none;
+}
+ul > li > a {
+    color: blue;
+    text-decoration: none;
+}
+ul{
+    border: 1px dotted;
+}
+.line{
+    border-top: 1px solid black;
+}

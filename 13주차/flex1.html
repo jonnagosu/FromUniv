@@ -1,0 +1,42 @@
+<html>
+<head>
+ <title>플렉스 박스</title>
+  <style>
+  #container {
+	width:500px;
+	height:100px;
+	margin:0 auto 20px;
+	display:flex;  
+   align-items: center;
+	border:2px solid black;
+   }	
+   #container div {
+	width:100px;
+   height: 50px;
+	border: 2px solid black;
+	background:#ccc;
+    }
+    h2 {
+	text-align: center;
+	font-weight:bold;
+   }
+   #box1{
+      flex: 1 1 0;
+   }
+   #box2{
+      flex: 1 1 0;
+   }
+   #box3{
+      flex: 1 1 0;
+   }
+  </style>
+</head>
+<body>
+<div id="container">
+      <div id="box1"><h2>1</h2></div>
+      <div id="box2"><h2>2</h2></div>
+      <div id="box3"><h2>3</h2></div>
+      
+</div>
+</body>
+</html>

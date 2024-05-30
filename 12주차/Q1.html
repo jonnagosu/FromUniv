@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: bisque;
+            padding: 0;
+        }
+        nav{
+            margin: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        nav a:hover{
+            color: red;
+        }
+        nav ul{
+            list-style-type: none;
+            border-top: 1px solid red;
+            border-bottom: 1px solid red;
+            text-align: center;
+            padding: 10px;
+        }
+        nav ul li{
+            display: inline;
+            text-transform: uppercase;
+            letter-spacing: 10px; /*글자 간 간격*/
+            margin: 0px 15px;
+        }
+        /*사이드바 왼쪽*/
+        #left{
+            width: 175px;
+            float: left;
+            display: inline-block;
+        }
+        #left ul{
+            font-size: 15px;
+            text-indent: 15px; /*들여쓰기*/
+        }
+        #left ul li{
+            background-color: black;
+            line-height: 28px; /*줄 간격*/
+            border-bottom: 1px solid #333;
+        }
+        #left a{
+            color: white;
+        }
+        #left ul li:hover{
+            background-color: red;
+        }
+        /*중앙 컨텐츠*/
+        form{
+            display: flex;
+            align-items: center;
+        }
+        .frame1{
+            width: 650px;
+            height: 400px;
+            border-top: 3px solid gray;
+            border-left: 3px solid gray;
+            display: inline-block;
+            margin-left: 2em;
+            padding: 10px;
+            margin: 0;
+        }
+        .frame1-1, .frame1-2{
+            width: 300px;
+            height: 400px;
+            border: 1px dotted red;
+            display: inline-block;
+            margin: 0 auto ;
+            float: left;
+        }
+        .frame1-1 img, .frame1-2 img{
+            width: 170px;
+            height: 150px;
+        }
+        /*두번째 컨텐츠*/
+        .frame2{
+            display: inline-block;
+            width: 300px;
+            height: 400px;
+            margin-left: 30px;
+        }
+        .frame2-1{
+            width: 150px;
+            height: 200px;
+        }
+        .frame2-2{
+            width: 180px;
+        }
+        .frame2 a{
+            text-decoration: underline;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-----상단 메뉴----->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </nav>
+    <!-----사이드 바 왼쪽----->
+    <aside id="left">
+        <h4>카테고리</h4>
+        <ul>
+            <li><a href="#">컴퓨터</a></li>
+            <li><a href="#">의류</a></li>
+            <li><a href="#">음악</a></li>
+            <li><a href="#">영화</a></li>
+            <li><a href="#">스포츠/레저</a></li>
+            <li><a href="#">가구/인테리어</a></li>
+            <li><a href="#">식품</a></li>
+        </ul>
+    </aside>
+<form>
+    <div class="frame1">
+        <div class="frame1-1">
+            <img src="과제/notebook.png" alt="제품사진">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque reiciendis voluptatibus enim similique aut natus aliquid, 
+                s consequuntur unde autem ducimus sed accusamus obcaecati voluptate.</p>
+                <input type="submit" value="쇼핑카트에 추가하기">
+        </div>
+        <div class="frame1-2">
+            <img src="과제/notebook.png" alt="제품사진">
+            <p>Lorem ipsum dolor sitque reiciendis voluptatibus enim similique aut natus aliquid, 
+                s consequuntur unde autem ducimus sed accusamus obcaecati voluptate.</p>
+                <input type="submit" value="쇼핑카트에 추가하기">
+        </div>
+    </div>
+    <div class="frame2">
+        <div class="frame2-1">
+            <h5>shopping cart</h5>
+            <p>쇼핑카트에 물품이 없습니다.</p>
+            <a href="#">쇼핑카트 가기</a>
+        </div>
+        <div class="frame2-2">
+            <h5>Log in</h5>
+            아이디<br>
+            <input type="text"><br>
+            비밀번호
+            <input type="password">
+            <button type="submit">로그인</button><button type="reset">초기화</button><br>
+            <a href="#">회원가입</a>&nbsp;<a href="#">비밀번호 분실</a>
+        </div>
+    </div>
+</form>
+Copyright (c) 2023 Web Shop
+</body>
+</html>

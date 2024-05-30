@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+<body>
+    <canvas class="canvas" width="500" height="500"
+    style="background-color: chocolate;">
+
+    </canvas>
+
+    <script>
+        var can1=document.getElementsByClass("canvas");
+        var context1=can1.getContext("2d");
+        
+        context1.beginPath();
+        context1.rect(20,20,50,50);
+        context1.lineWidth=3;
+        context1.strokeStyle="black";
+        context1.stroke();
+    </script>
+</body>
+</html>

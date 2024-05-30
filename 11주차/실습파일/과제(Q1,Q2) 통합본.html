@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>오륜기 그리기</h1>
+<hr>
+    <canvas id="canvas1" width="350" height="350"
+    style="background-color: skyblue;">
+        
+    </canvas>
+<br>
+
+<h1>사진과 이름 출력</h1>
+<hr>
+    <canvas id="canvas2" width="550" height="350"
+    style="background-color: skyblue;">
+        
+    </canvas>
+    <!--------------script-------------->
+    <script>
+        /*1번 캔버스*/
+        var can1=document.getElementById("canvas1");
+        var context1=can1.getContext("2d");
+
+        /*(1) 원*/
+        context1.beginPath();
+        context1.lineWidth=3;
+        context1.strokeStyle="blue";
+        context1.arc(70,70,50,2*Math.PI,false);
+        context1.stroke();
+        
+        /*(2) 원*/
+        context1.beginPath();
+        context1.lineWidth=3;
+        context1.strokeStyle="yellow";
+        context1.arc(120,120,50,2*Math.PI,false);
+        context1.stroke();
+
+        /*(3) 원*/
+        context1.beginPath();
+        context1.lineWidth=3;
+        context1.strokeStyle="black";
+        context1.arc(170,70,50,2*Math.PI,false);
+        context1.stroke();
+
+        /*(4) 원*/
+        context1.beginPath();
+        context1.lineWidth=3;
+        context1.strokeStyle="green";
+        context1.arc(220,120,50,2*Math.PI,false);
+        context1.stroke();
+
+        /*(5) 원*/
+        context1.beginPath();
+        context1.lineWidth=3;
+        context1.strokeStyle="red";
+        context1.arc(270,70,50,2*Math.PI,false);
+        context1.stroke();
+
+        /*2번 캔버스*/
+        var can2=document.getElementById("canvas2");
+        var context2=can2.getContext("2d");
+
+        var img = new Image(); /*사진 변수명 지정*/
+
+        img.onload=function(){
+            context2.drawImage(img,20,20,180,180) /*불러올 사진 이름, 시작점, 크기*/
+            context2.font="80px forte";
+		    context2.fillStyle="hotpink";
+		    context2.lineWidth=3;
+		    context2.fillText("spongebob",20,180); /*글씨 ("내용", 좌표x, y)*/
+        }
+        img.src="src/spongebob.png"
+    </script>
+    <!--------------script-------------->
+</body>
+</html>

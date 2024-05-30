@@ -1,0 +1,15 @@
+body{
+    background-color: aliceblue;
+}
+.letter{
+    font-family:"휴먼편지체";
+}
+h1{
+    text-align: center; color: brown;
+}
+a{
+    color: blue; text-decoration: none;
+}
+ul{
+    border: 1px dotted;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+</head>
+<body>
+    
+    <h3>3 개의 캔버스 만들기</h3>
+    <hr>
+    <canvas id="c1" width="150" height="100" 
+    style="background-color: lightblue;">
+        
+    </canvas>
+    <canvas id="c2" width="150" height="100"
+    style="background-color: violet;"> 
+    </canvas>
+    <br>
+    <canvas id="c3" width="300"  height="100"
+    style="background-color: yellow;">
+        
+    </canvas>
+    <br>
+    <canvas id="c4" width="300" height="100"
+    style="background-color: chocolate;">
+
+    </canvas>
+    <!----------------------------------------------script---------------------------------------------------------------->
+    <script>
+        var can1=document.getElementById("c1");
+        var context1=can1.getContext("2d");
+
+        context1.beginPath();
+        context1.moveTo(20,20); /*시작점 변경*/
+        context1.lineTo(50,50); /*해당 좌표까지 선*/
+        context1.lineTo(70,10); /*해당 좌표까지 선*/
+        context1.closePath(); /*패스 닫기(선 잇기)*/
+        context1.stroke();
+/*----------------------------------------------------------------------------------------------------------------*/
+        var can2=document.getElementById("c2"); /*document= 문서 내부의 getElementById("c2") ()내부의 아이디명을 가져옴 */
+        var context2=can2.getContext("2d");
+
+        context2.beginPath();
+        context2.rect(30,30, 50,50);
+        context2.strokeStyle="blue";
+        context2.stroke();
+
+        context2.beginPath();
+        context2.rect(50,50, 50,50);
+        context2.fillStyle="red";
+        context2.fill();
+        context2.strokeStyle="blue";
+        context2.stroke();
+/*----------------------------------------------------------------------------------------------------------------*/
+        var can3=document.getElementById("c3"); /*객체명 지정*/
+        var context3=can3.getContext("2d");
+
+        context3.beginPath();  /*도형 그리기*/
+        context3.rect(30,30, 50,50);
+        context3.strokeStyle="blue";
+        context3.stroke();
+
+        context3.font="50px arial"; /*글자 속이 빈 = stroke(선)*/
+        context3.lineWidth=3;
+        context3.strokeStyle="red";
+        context3.strokeText("namin", 150,70);
+
+        context3.font="50px Gothic"; /*글자 속이 찬 = fill*/
+        context3.fillStyle="green";
+        context3.fillText("namin", 100,50);
+
+        var w=can3.width; /*변수명 지정*/
+        var h=can3.height;
+        alert("캔버스는" + w + "x" + h) /*사이트 시작시 (경고?) 메시지*/
+    </script>
+    <!----------------------------------------------script---------------------------------------------------------------->
+</body>
+</html>

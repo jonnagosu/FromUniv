@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .box1{
+            background-color: yellow;
+            border: 2px solid black;
+            width: 200px;
+            height: 100px;
+            transition: 3s;
+            -webkit-transition: 3s; /*webkit 은 브라우저 마다 적용을 위한 접두사*/
+        }
+        .box1:hover{
+            border: 2px solid red;
+            transform: rotate(180deg);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box1">마우스를 올려봐.</div>
+</body>
+</html>

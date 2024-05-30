@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        nav{
+            margin: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style-type: none;
+        }
+        nav a:hover{
+            color: red;
+        }
+        nav ul{
+            list-style-type: none;
+            border-top: 1px solid red;
+            border-bottom: 1px solid red;
+            text-align: center;
+            padding: 10px;
+        }
+        nav ul li{
+            display: inline;
+            text-transform: uppercase;
+            letter-spacing: 10px; /*글자 간 간격*/
+            margin: 0px 15px;
+        }
+        /*사이드바 왼쪽*/
+        #left{
+            width: 175px;
+            float: left;
+        }
+        #left ul{
+            font-size: 15px;
+            text-indent: 15px; /*들여쓰기*/
+        }
+        #left ul li{
+            background-color: black;
+            line-height: 28px; /*줄 간격*/
+            border-bottom: 1px solid #333;
+        }
+        #left a{
+            color: white;
+        }
+        #left ul li:hover{
+            background-color: red;
+        }
+        /*사이드바 오른쪽*/
+        #right{
+            width: 175px;
+            float: right;
+        }
+        #right ul{
+            font-size: 15px;
+            text-indent: 15px; /*들여쓰기*/
+        }
+        #right ul li{
+            background-color: black;
+            line-height: 28px; /*줄 간격*/
+            border-bottom: 1px solid #333;
+        }
+        #right a{
+            color: white;
+        }
+        #right ul li:hover{
+            background-color: red;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-----상단 메뉴----->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </nav>
+    <!-----사이드 바 왼쪽----->
+    <aside id="left">
+        <h4>카테고리</h4>
+        <ul>
+            <li><a href="#">컴퓨터</a></li>
+            <li><a href="#">의류</a></li>
+            <li><a href="#">음악</a></li>
+            <li><a href="#">영화</a></li>
+            <li><a href="#">스포츠/레저</a></li>
+            <li><a href="#">가구/인테리어</a></li>
+            <li><a href="#">식품</a></li>
+        </ul>
+    </aside>
+    <!--사이드 바 오른쪽-->
+    <aside id="right">
+        <h4>카테고리</h4>
+        <ul>
+            <li><a href="#">컴퓨터</a></li>
+            <li><a href="#">의류</a></li>
+            <li><a href="#">음악</a></li>
+            <li><a href="#">영화</a></li>
+            <li><a href="#">스포츠/레저</a></li>
+            <li><a href="#">가구/인테리어</a></li>
+            <li><a href="#">식품</a></li>
+        </ul>
+        
+    </aside>
+</body>
+</html>

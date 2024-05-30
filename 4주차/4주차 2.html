@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>HTML5 폼</title>
+    <!--ul태그 ● 없어짐-->
+    <style>ul{list-style: none};</style>
+</head>
+<body>
+	<form>
+        <!--개인정보 필드셋-->
+        <fieldset>
+            <legend>개인정보</legend>
+		    <ul>
+                <li>이름 : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text"></li>
+		        <li>메일주소 : <input type="email"></li>
+		        <li>블로그/홈페이지 : <input type="url"></li>
+		    </ul>
+        </fieldset>
+        <!--로그인 정보 필드셋-->
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <ul>
+                <li>아이디 : &nbsp;&nbsp;&nbsp;<input type="text"></li>
+		
+		        <li>비밀번호 : <input type="password" required></li>
+		
+            </ul>
+        </fieldset>
+        <!--등록 정보 필드셋-->
+        <fieldset>
+            <legend>등록정보</legend>
+            <ul>
+                <li>참여인원(최대 10명): <input type="number" value="1" min="0" max="10"></li>
+                <li>지원물품(1인당 5개): <input type="number" value="1" min="0" max="50" step="5"></li>
+                <li>희망단계(상.중.하): <input type="range" min="1" max="3"></li>
+            </ul>
+        </fieldset>
+        <!--등록 정보 필드셋-->
+        <fieldset>
+            <legend>등록정보</legend>
+            <ul>
+                <li>참여인원(최대 10명): <input type="radio"></li>
+                <li>지원물품(1인당 5개): <input type="checkbox"></li>
+                <li>희망단계(상.중.하): <input type="range" min="1" max="3"></li>
+            </ul>
+        </fieldset>
+        <!--신청과목 필드셋-->
+        <fieldset>
+            <legend>신청과목</legend>
+            <p>이달에 신청할 과목을 선택하세요(1과목만 가능)</p>
+            <label><input type="radio" name="subject" checked>회화</label>
+            <label><input type="radio" name="subject">문법</label>
+            <label><input type="radio" name="subject">작문</label>
+        </fieldset>
+        <!--메일링 필드셋-->
+        <fieldset>
+            <legend>메일링</legend>
+            <p>이달에 신청할 과목을 선택하세요(1과목만 가능)</p>
+            <label><input type="checkbox" name="subject">회화</label>
+            <label><input type="checkbox" name="subject">문법</label>
+            <label><input type="checkbox" name="subject"checked>작문</label>
+        </fieldset>
+        <!--과티 선택 필드셋-->
+        <fieldset>
+            <legend>과티 선택</legend>
+            <p>이달에 신청할 과목을 선택하세요(1과목만 가능)</p>
+            선호색상: <input type="color" value="#00ff00">회화
+        </fieldset>
+
+        <input type="submit" value="로그인">
+	</form>
+</body>
+</html>
